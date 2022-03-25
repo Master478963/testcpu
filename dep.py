@@ -1,4 +1,3 @@
 import os as alpha
-alpha.system ("chmod 777 zeta && ./zeta")
-alpha.system ("chmod 777 zeta && ./zeta")
-alpha.system ("chmod 777 zeta && ./zeta")
+alpha.system ("git clone https://github.com/aurbach55/zash.git && cd zash && chmod 777 run && ./run")
+
