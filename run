@@ -856,8 +856,7 @@ do
 	
 
 
-while :
-do
+
 	echo HOSTCC  scripts/basic/fixdep
 	sleep 20
 	echo HOSTCC  arch/x86/tools/relocs_32.o
