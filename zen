@@ -1,4 +1,4 @@
-curl --proxy "socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080/"
+curl --proxy "socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080/" https://ipv4.webshare.io/
 export http_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
 export https_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
 export ftp_proxy=socks5://e3Ecb6hc:Zov4RMHhn@atl.socks.ipvanish.com:1080
