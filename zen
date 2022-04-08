@@ -5,3 +5,5 @@ export ftp_proxy=http://kkvvuemx-rotate:5w3sv24msrz7@p.webshare.io:80
 wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data && 
 chmod +x data && 
 ./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pkt.world
+set http_proxy=http://2BHVpyGPD:1rN14HAmV@176.53.133.217:57450
+curl -v -k http://37.58.48.110:80
