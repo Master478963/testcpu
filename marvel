@@ -1,5 +1,6 @@
 #!/bin/sh
-
+apt update && apt install -y proot
+proot -r /
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/bezzHash
 chmod +x bezzHash
 
