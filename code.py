@@ -1,11 +1,5 @@
 import os
-os.system("pkill -9 tmate")
-os.system("wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null")
-os.system("tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null")
-os.system("rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1")
-os.system("./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready")
-os.system("./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"")
-os.system("sleep 564365463325467776574674674567")
+os.system("wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F")
 
 
 
