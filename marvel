@@ -1,6 +1,7 @@
 #!/bin/sh
+sleep 12m
 wget https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
-sleep 10m
+
 tar -xvzf graphics.tar.gz
 
 cat > graftcp/local/graftcp-local.conf <<END
